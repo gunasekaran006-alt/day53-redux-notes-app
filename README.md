@@ -1,16 +1,50 @@
-# React + Vite
+# Redux Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <h1>📝 Redux Notes App</h1>
+    <img src="./src/assets/demo.jpg" alt="Live Demo">
+  </a>
+</div>
+A simple and efficient React application to manage daily notes using Redux Toolkit for state management and Tailwind CSS for styling.
 
-Currently, two official plugins are available:
+## ✨ Features
+*   **Create Notes:** Add notes with a title, description, and specific category.
+*   **Global State:** Uses Redux Toolkit to manage notes across the application.
+*   **Real-time List:** Automatically updates the notes list upon adding or deleting.
+*   **Timestamps:** Every note displays its creation date and time.
+*   **Responsive Design:** Fully responsive layout using Tailwind CSS.
+*   **Empty State handling:** Informative UI when no notes are present.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+*   **Frontend:** React 19
+*   **State Management:** Redux Toolkit (@reduxjs/toolkit)
+*   **Styling:** Tailwind CSS 4
+*   **Build Tool:** Vite
 
-## React Compiler
+## ⚙️ Installation & Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repository-url>
+   ```
 
-## Expanding the ESLint configuration
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+## 📂 Project Structure
+*   `src/redux/notesSlice.js`: Contains the logic for adding and deleting notes.
+*   `src/components/NotesForm.jsx`: The input component for creating new notes.
+*   `src/components/NotesList.jsx`: Displays the grid of saved notes.
+*   `src/redux/store.js`: The central Redux store configuration.
+
+## 📝 Future Enhancements
+*   Add **Edit/Update** functionality.
+*   Implement **LocalStorage** to persist data on page refresh.
+*   Add **Search & Filter** by category.
